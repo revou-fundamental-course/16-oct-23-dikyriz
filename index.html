@@ -4,6 +4,197 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="header">
+        <div>
+          <img src="./assets//logo.webp" alt="logo" class="img-logo" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Our Profile</a></li>
+            <li><a href="#">Portofolio</a></li>
+            <li><a href="#message">Message Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <article class="article">
+        <section class="hero" id="home">
+          <div>
+            <h1>
+              Hi <span class="user" id="user"></span>, <br /><span
+                >Welcome to the Website</span
+              >
+            </h1>
+            <p>This website is created with native style</p>
+          </div>
+        </section>
+      </article>
+      <article>
+        <h1 class="title" id="profile">Our Profile</h1>
+        <section>
+          <div>
+            <img src="./assets/profile.png" alt="profile" class="img-profile" />
+            <div>Lorem Ipsom dolorr amet</div>
+          </div>
+          <div class="profile-letter">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quo
+            illo, deleniti eligendi officia magnam rem amet quas cupiditate
+            omnis itaque iusto expedita laboriosam sed ex animi sequi
+            reprehenderit rerum.
+          </div>
+        </section>
+        <h1 class="title">Our Headquarter</h1>
+        <section>
+          <div class="items-thumbnail">
+            <div class="item-thumbnail">
+              <div class="cover-thumbnail">
+                <img src="./assets/jkt.jpg" alt="jakarta" class="thumbnail" />
+              </div>
+              <div>
+                <h6>Jakarta</h6>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Commodi nisi unde ut asperiores ex expedita repellendus quod
+                  modi assumenda a, obcaecati saepe culpa deleniti dolores illum
+                  itaque facere at voluptates!
+                </p>
+              </div>
+            </div>
+            <div class="item-thumbnail">
+              <div class="cover-thumbnail">
+                <img src="./assets/bdg.webp" alt="bandung" class="thumbnail" />
+              </div>
+              <div>
+                <h6>Bandung</h6>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Commodi nisi unde ut asperiores ex expedita repellendus quod
+                  modi assumenda a, obcaecati saepe culpa deleniti dolores illum
+                  itaque facere at voluptates!
+                </p>
+              </div>
+            </div>
+            <div class="item-thumbnail">
+              <div class="cover-thumbnail">
+                <img src="./assets/sby.webp" alt="surabaya" class="thumbnail" />
+              </div>
+              <div>
+                <h6>Surabaya</h6>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Commodi nisi unde ut asperiores ex expedita repellendus quod
+                  modi assumenda a, obcaecati saepe culpa deleniti dolores illum
+                  itaque facere at voluptates!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+      <article id="message">
+        <h1>Message Us</h1>
+        <section>
+          <div class="forms">
+            <form class="form" name="form" action="" method="dialog">
+              <div class="form-input">
+                <label for="nama">Nama</label>
+                <input type="text" name="" id="nama" placeholder="Nama" />
+              </div>
+              <div class="form-input">
+                <label for="">Tanggal Lahir</label>
+                <input type="date" name="" id="date" />
+              </div>
+              <div class="form-input">
+                <label>Jenis Kelamin</label>
+                <div class="form-radio">
+                  <div>
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="jk"
+                      value="Laki - Laki"
+                    />
+                    <label for="">Laki - Laki</label>
+                  </div>
+                  <div>
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="jk"
+                      value="Perempuan"
+                    />
+                    <label for="">Perempuan</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-input">
+                <label for="">Pesan</label>
+                <textarea name="" id="pesan"></textarea>
+              </div>
+              <button type="submit" id="submit">Submit</button>
+            </form>
+          </div>
+          <div class="form-area">
+            <!-- <textarea
+              type="text"
+              name=""
+              id="result"
+              class="message-area"
+            ></textarea> -->
+            <!-- <div>
+              <h2>
+                
+              </h2>
+            </div>
+            <div>
+              <p>Nama : <span>nama</span></p>
+            </div>
+            <div>
+              <p>Tanggal Lahir : <span>23 - oct - 2023</span></p>
+            </div>
+            <div>
+              <p>Jenis Kelamin : <span>Laki - Laki</span></p>
+            </div>
+            <div>
+              <p>Pesan : <span>awaadadqdadwaw</span></p>
+            </div> -->
+
+            <table>
+              <tr>
+                <th colspan="2" id="current"></th>
+              </tr>
+              <tbody id="tbody">
+                <!-- <tr>
+                  <td>Nama</td>
+                  <td>Name</td>
+                </tr>
+                <tr>
+                  <td>Tanggal Lahir</td>
+                  <td>23-oct-2023</td>
+                </tr>
+                <tr>
+                  <td>Jenis Kelamin</td>
+                  <td>Laki - Laki</td>
+                </tr>
+                <tr>
+                  <td>Pesan</td>
+                  <td>aaS</td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <h6>Created By <span>RevoU</span></h6>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
