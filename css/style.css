@@ -78,7 +78,7 @@ nav {
   -moz-box-shadow: 1px -67px 18px -34px rgba(255, 255, 255, 1) inset;
 }
 /*update*/
-.article > .hero > div {
+.article > .hero > div:nth-child(1) {
   padding-left: 10px;
   padding-top: 40px;
 }
@@ -97,7 +97,7 @@ nav {
   font-weight: 200;
 }
 /*update*/
-.article > .hero > div > p {
+.article > .hero > div > h6 {
   font-family: "Poppins", sans-serif;
   font-size: 11px;
   font-weight: 200;
@@ -107,6 +107,40 @@ nav {
   padding: 4px;
   border-radius: 6px;
 }
+
+.article > .hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.article > .hero > div:nth-child(2) {
+  /* border: 1px solid red; */
+  position: relative;
+  padding: 10px 8px;
+}
+
+.img-slider {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 2px 1px 5px 2px rgba(42, 0, 92, 0.33);
+  -webkit-box-shadow: 2px 1px 5px 2px rgba(42, 0, 92, 0.33);
+  -moz-box-shadow: 2px 1px 5px 2px rgba(42, 0, 92, 0.33);
+  border: 3px solid white;
+}
+/* .article > .hero > div:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 8px;
+  width: 96%;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #676086;
+  opacity: 0.7;
+} */
+/* background-image: linear-gradient(120deg, #eaee44, #33d0ff); */
 
 article:nth-child(2) {
   /* border: 1px solid red; */
@@ -392,12 +426,47 @@ footer > h6 > span {
   .header {
     padding: 10px 90px;
   }
+
+  .img-slider {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 1px 5px 2px rgba(42, 0, 92, 0.33);
+    -webkit-box-shadow: 2px 1px 5px 2px rgba(42, 0, 92, 0.33);
+    -moz-box-shadow: 2px 1px 5px 2px rgba(42, 0, 92, 0.33);
+    border: 3px solid white;
+  }
+  /* .article > .hero > div:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #676086;
+    opacity: 0.7;
+  } */
+  /* background-image: linear-gradient(120deg, #eaee44, #33d0ff); */
+
   nav {
     display: block;
   }
-  .article > .hero > div {
+  .article > .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .article > .hero > div:nth-child(1) {
     padding-left: 70px;
     padding-top: 80px;
+    padding-bottom: 80px;
+    /* border: 1px solid black; */
+  }
+  .article > .hero > div:nth-child(2) {
+    /* border: 1px solid red; */
+    position: relative;
   }
 
   .article > .hero > div > h1 {

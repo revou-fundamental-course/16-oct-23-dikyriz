@@ -67,9 +67,37 @@ function handleForm() {
     }
   }
 
-  console.log(currentDate);
-  console.log(name);
-  console.log(date);
-  console.log(gender);
-  console.log(message);
+  // console.log(currentDate);
+  // console.log(name);
+  // console.log(date);
+  // console.log(gender);
+  // console.log(message);
 }
+
+var slideIndex = 1;
+slideShow(slideIndex);
+
+function nextSlide(n) {
+  slideShow((slideIndex += n));
+}
+
+function slideShow(n) {
+  var i;
+  const imgList = document.getElementsByClassName("img-slider");
+
+  if (n > imgList.length) {
+    slideIndex = 1;
+  } else if (n < 1) {
+    slideIndex = imgList.length;
+  }
+
+  for (i = 0; i < imgList.length; i++) {
+    imgList[i].style.display = "none";
+  }
+
+  imgList[slideIndex - 1].style.display = "block";
+}
+
+setInterval(() => {
+  nextSlide(1);
+}, 5000);
